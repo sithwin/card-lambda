@@ -29,9 +29,9 @@ exports.handler = (event, context, callback) => {
       callback(null, generatePolicy("user", "Allow", event.methodArn));
       break;
     case "deny":
-        callback(null, generatePolicy("user", "Deny", event.methodArn));
-        break;
-    default: 
-        callback("Error: Invalid token");
+      callback(null, generatePolicy("user", "Deny", event.methodArn));
+      break;
+    default:
+      callback("Error: Invalid token");
   }
 };
