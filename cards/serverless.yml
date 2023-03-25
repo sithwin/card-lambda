@@ -88,3 +88,7 @@ resources:
         KeySchema:
           - AttributeName: notesId
             KeyType: HASH
+
+# you can add CloudFormation resource templates here
+resources:
+  Resources: ${file(resources.yml)}
